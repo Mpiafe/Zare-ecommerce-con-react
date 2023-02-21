@@ -1,5 +1,5 @@
 import './App.css'
-import CartWidget from './components/CartWidget/CartWidget';
+import ItemContainer from './components/ItemsContainer/ItemContainer';
 import NavBar from  './components/NavBar/NavBar';
 
 
@@ -13,7 +13,7 @@ const App= () => {
      
       <h1>De Viaje</h1>
       <h2>Tienda de accesorios de viaje</h2>
-      
+      <ItemContainer txtsaludo = "Hola Pia!!!!"/>
     </div>
   )
 }
