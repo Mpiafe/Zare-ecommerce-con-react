@@ -8,20 +8,34 @@
     padding:0%;
     color:white;
     width: 100%;
-    height: 60%;
+    height: 100%;
     font-size: 1.2rem;
     font-family:'Poppins, sans-serif';
     font-weight: bold;
 }
 
+.buscar input{
+
+    width: 480px;
+    height: 35px;
+    padding: 0 20px;
+    font-size: 18px;
+    border-style:none ;
+    border-color: white;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
 
 .btn{
-    
-    font-family: 'Poppins, sans-serif';
-}
-.search{
-    border-radius: 15%;
-    margin-top: 2%;
+    position:absolute;
+    top:13%;
+    left: 53%;
+    right:62% ;
+    color:#ffde59;
+    width: 55px;
+    height: 55px;
 }
 .logo{
    

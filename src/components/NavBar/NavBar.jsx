@@ -2,6 +2,7 @@ import  "./navBar.css";
 import { HiOutlineChatAlt2 }  from 'react-icons/hi';
 import { AiOutlineUserSwitch }from 'react-icons/ai';
 import CartWidget from "../CartWidget/CartWidget";
+import { BiSearchAlt }  from 'react-icons/bi';
 
 
 
@@ -13,9 +14,11 @@ const NavBar = () => {
      <img className="logo" src="/images/NuevoLogo.png"/>
       
        
-       <form className="search">
-        <input type="search"  placeholder="Que estas buscando??"/>
-        <button className="btn" type="submit" >Search</button>
+     <form className="buscar">
+        <input type="text"  placeholder="Que estas buscando??"/>
+        <div className="btn">
+          <BiSearchAlt/>
+        </div>
        </form>
 
        <div className="Ayuda">
