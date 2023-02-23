@@ -12,8 +12,8 @@ const App= () => {
       <NavBar />
       
      
-      <h1>De Viaje</h1>
-      <h2>Tienda de accesorios de viaje</h2>
+      
+      
       <ItemContainer txtsaludo = "Hola Pia!!!!"/>
     </div>
   )
