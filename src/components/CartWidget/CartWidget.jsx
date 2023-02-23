@@ -5,8 +5,11 @@ import "./CartWidget.css"
 const CartWidget = () => {
   return (
     <div className='cart'>
+     
         <BsCart3/>
-        <h2>1</h2>
+     
+        <p>Mi Carrito 0</p>
+        
         </div>
   )
 }
