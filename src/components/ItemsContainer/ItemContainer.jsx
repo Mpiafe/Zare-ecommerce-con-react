@@ -1,9 +1,9 @@
 import React from 'react'
 import "./ItemContainer.css";
 
-const ItemContainer = ({txtsaludo}) => {
+const ItemContainer = () => {
   return (
-    <div className='saludo'>{txtsaludo}</div>
+    <div></div>
   )
 }
 

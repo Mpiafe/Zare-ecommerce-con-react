@@ -3,6 +3,7 @@ import { HiOutlineChatAlt2 }  from 'react-icons/hi';
 import { AiOutlineUserSwitch }from 'react-icons/ai';
 import CartWidget from "../CartWidget/CartWidget";
 import { BiSearchAlt }  from 'react-icons/bi';
+import { BsShopWindow} from 'react-icons/bs'
 
 
 
@@ -29,6 +30,11 @@ const NavBar = () => {
        <div className="MiCuenta">
        <AiOutlineUserSwitch/>
        <p>Mi cuenta</p>
+       </div>
+
+       <div className="Productos">
+        <BsShopWindow/>
+        <p>Productos</p>
        </div>
        
        <CartWidget/>
