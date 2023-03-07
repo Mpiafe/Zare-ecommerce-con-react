@@ -1,20 +1,36 @@
-import './App.css'
-import ItemContainer from './components/ItemsContainer/ItemContainer';
+import './App.css';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+import { Navigate, Route, Routes } from "react-router-dom";
 import NavBar from  './components/NavBar/NavBar';
+import ProductList from "./components/ProductList/ProductList";
+import Home from "./components/Home/Home"
+import ItemProduct from "./components/ItemProduct/ItemProduct";
 
 
-const App= () => {
- 
+function App() {
+  const [productos, setProductos] = useState([]);
 
-  return (
+  const getProductos = async () => {
+    const res = await axios.get("https://fakestoreapi.com/products");
+    setProductos(res.data);
+  };
+
+  useEffect(() => {
+    getProductos();
+  }, []);
+console.log (productos)
+  
+return (
+    
     <div>
-      
-      <NavBar />
-      
-     
-      
-      
-      <ItemContainer txtsaludo = "Hola Pia!!!!"/>
+        <NavBar />
+   <Routes>
+    <Route path= "/" element = {<Home/>} />
+    <Route path= "/productos" element= {<ProductList productos ={productos}/>}/>
+    <Route path= "/producto/:id" element= {<ItemProduct productos = {productos}/>} />
+   </Routes>
+
     </div>
   )
 }
