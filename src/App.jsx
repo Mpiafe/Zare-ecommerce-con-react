@@ -28,7 +28,7 @@ return (
    <Routes>
     <Route path= "/" element = {<Home/>} />
     <Route path= "/productos" element= {<ProductList productos ={productos}/>}/>
-    <Route path= "/producto/:id" element= {<ItemProduct productos = {productos}/>} />
+    <Route path= "/productos/:id" element= {<ItemProduct productos = {productos}/>} />
    </Routes>
 
     </div>
