@@ -1,8 +1,11 @@
 .container-card{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    float:left;
     
-    border: 2px solid greenyellow;
+    margin-top: 2%;
+    
+    border: 1px solid black;
     padding: 1rem;
 }
