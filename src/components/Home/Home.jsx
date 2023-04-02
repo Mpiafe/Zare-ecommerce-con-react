@@ -1,8 +1,12 @@
 import  "./Home.css";
-import { BsCreditCard2BackFill} from 'react-icons/bs';
 import { HiShoppingBag }  from 'react-icons/hi';
 import { TbTruckDelivery} from 'react-icons/tb';
+import { BsCreditCard2BackFill} from 'react-icons/bs';
 import { AiTwotoneLike } from 'react-icons/ai';
+
+
+
+
 
 
  
@@ -17,14 +21,17 @@ import { AiTwotoneLike } from 'react-icons/ai';
           
           <TbTruckDelivery />
           <p>Elegi donde lo queres recibir</p>
+
           <BsCreditCard2BackFill />
           <p>Elegi como lo queres pagar</p>
+
           <AiTwotoneLike />
           <p>Recibilo y disfrutalo</p>
         </div> 
+        </aside>
 
-        
-    </aside>
+      
+   
    )
  }
  

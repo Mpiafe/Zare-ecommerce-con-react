@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import { getFirestore} from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 
 
 
@@ -10,11 +10,10 @@ const firebaseConfig = {
   projectId: "deviaje-e6e8f",
   storageBucket: "deviaje-e6e8f.appspot.com",
   messagingSenderId: "350090614690",
-  appId: "1:350090614690:web:f60fcad96c9988643ec4fb"
+  appId: "1:350090614690:web:d74faba06c0535443ec4fb"
 };
 
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db= getFirestore (app)
-export default db
+const db = getFirestore(app);
+export default db;

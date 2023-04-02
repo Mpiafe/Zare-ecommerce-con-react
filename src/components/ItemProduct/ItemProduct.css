@@ -1,13 +1,13 @@
-.container-card{
+.product{
     display: inline-flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     text-decoration: none;
-    width: 35%;
-    height: 35%;
-    margin: 50px;
+    width: 40%;
+    height:40%;
+    margin: 50px ;
+    margin-left: 50px;
     padding: 25px;
     border-radius: 10px;
     background-color: #ffde59;
@@ -16,21 +16,4 @@
     font-weight: bold;
     font-family: Verdana,sans-serif;
     
-}
-
-
-
-
-
-
-
-/*.container-card{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 2%;
-    border: 4px solid black;
-    padding: 1rem;
 }

@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import "./ItemProduct.css";
 
 
 
@@ -6,22 +7,22 @@ import { useParams } from "react-router-dom";
 
 const ItemProduct = ({ productos}) => {
     
- 
-    
   const { id } = useParams();
-  const items = productos.find((producto) => producto.id == id);
+  const producto = productos.find((producto) => producto.id == id);
+  
 
   return (
-    <div>
+    <div className="product">
       <h4>{producto.title}</h4>
       <img src={producto.image} alt="" width={200} />
-      <p>{producto.description}</p>
       <p>$ {producto.price}</p>
-      
+      <p>rating: {producto.rating.rate}</p>
     </div>
+    
   );
 };
 
+export default ItemProduct;
     
 
-export default ItemProduct;
+
