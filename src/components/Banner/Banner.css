@@ -1,0 +1,23 @@
+.banner{
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    background-image: linear-gradient(rgba(20, 19, 19, 0.4),rgba(156, 151, 151, 0.4)), 
+    url("https://editorialtelevisa.brightspotcdn.com/dims4/default/bd5dd4d/2147483647/strip/true/crop/888x500+56+0/resize/1000x563!/format/webp/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2018%2F04%2FLo-que-no-sab%25C3%25ADas-sobre-la-forma-de-acomodar-la-ropa-en-las-tiendas-fast-fashion.jpeg")
+}
+.banner-container{
+    text-align: center;
+    padding:15% 0;
+}
+
+.banner h1{
+    margin:0;
+    color:white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 62px;
+}
+.banner p{
+    font-size: 30px;
+    color:white;
+    opacity: 0.7;
+}
