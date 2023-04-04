@@ -1,8 +1,24 @@
+import { useState, useEffect } from "react";
 import Card from "../Card/Card";
+import db from "../../../db/firebase-config";
+import { collection, getDocs } from "firebase/firestore";
 
 
-const ProductList = ({ productos }) => {
-  console.log (productos)
+const ProductList = () => {
+  const [productos, setProductos,cartList, setCartList] = useState([]);
+
+  const itemsCollectionRef = collection(db, "items");
+  console.log(itemsCollectionRef)
+
+  const getItems = async () => {
+  const itemsCollection = await getDocs(itemsCollectionRef);
+  setProductos(itemsCollection.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+    );
+  };
+
+  useEffect(() => {
+    getItems();
+  }, []);
   return (
     <div>
       {productos.map((producto) => (

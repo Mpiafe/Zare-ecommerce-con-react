@@ -1,9 +1,9 @@
-
+import CartElement from "./CartElement"
 
 
 const CartWidget = () => {
   return (
-    <div>CartWidget</div>
+    <CartElement/>
   )
 }
 

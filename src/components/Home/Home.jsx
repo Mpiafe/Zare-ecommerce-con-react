@@ -1,19 +1,21 @@
-import NavBar from "../NavBar/NavBar"
+
 import Banner from "../Banner/Banner"
 import ProductList from "../ProductList/ProductList"
- 
- const Home = () => {
-   return (
 
-    <>
-    <NavBar/>
+
+
+ 
+const Home = () => {
+  return (
+
+   <>
     <Banner/>
     <ProductList/>
-    
-    
-    </>
    
-   )
- }
- 
- export default Home
+
+   </>
+  
+  )
+}
+
+export default Home
