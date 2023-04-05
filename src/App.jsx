@@ -1,8 +1,7 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home/Home";
 import NavBar from './components/NavBar/NavBar';
-
+import Home from "./components/Home/Home";
 import { CartProvider } from './context/CartContext';
 
 
@@ -19,8 +18,6 @@ return (
        <NavBar/>
           <Routes> 
             <Route path= "/" element = {<Home/>} />
-          
-        
           </Routes>
     </CartProvider>
     </>

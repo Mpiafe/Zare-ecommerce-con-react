@@ -3,7 +3,7 @@ import CartElement from "./CartElement"
 
 const CartWidget = () => {
   return (
-    <CartElement/>
+    <h1>Hola Carrito</h1>
   )
 }
 

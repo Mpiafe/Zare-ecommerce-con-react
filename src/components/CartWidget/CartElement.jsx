@@ -1,4 +1,5 @@
-import { useCart } from "../../context/CartContext";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 
 
@@ -6,10 +7,10 @@ import { useCart } from "../../context/CartContext";
 
 
 const CartElement = () => {
-const { Cart }= useCart ()
+const { cart }= useContext (CartContext)
 
 
-return Cart.map((producto) => {
+return cart.map((producto) => {
     return (
         <div className='cartContent' key={producto.id}>
               <h3 className='name'>{producto.title}</h3>
