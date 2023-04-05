@@ -6,10 +6,10 @@ const CartItemCounter = ({ producto }) => {
   const { cart, setCart, addToCart } = useContext(CartContext);
 
   const decrese = () => {
-    const productorepeat = cart.find((item) => item.id === producto.id);
+    const productorepeat = cart.find((producto) => producto.id === producto.id);
 
     productorepeat.quanty !== 1 &&
-      setCart(cart.map((item) => (item.id === producto.id ? { ...producto, quanty: productorepeat.quanty - 1 } : item)));
+      setCart(cart.map((producto) => (producto.id === producto.id ? { ...producto, quanty: productorepeat.quanty - 1 } : item)));
   };
   return (
     <>

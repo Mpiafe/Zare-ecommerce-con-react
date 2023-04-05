@@ -10,7 +10,7 @@ const Cart = () => {
 const { cart }= useContext (CartContext)
 return (
   <>
-    <NavBar />
+   
     {cart.length > 0 ? (
       <>
         <CartElement />
@@ -24,4 +24,4 @@ return (
 };
 
 
-export default Cart
+export default Cart;
