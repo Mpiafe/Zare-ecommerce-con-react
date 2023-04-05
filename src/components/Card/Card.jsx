@@ -5,7 +5,7 @@ import { CartContext } from "../../context/CartContext";
 
 
 const Card = ({producto}) => {
-const { cart, setCart} = useContext (CartContext) 
+const { addToCart} = useContext (CartContext) 
  
   return (
        <div className="container-card">

@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from './components/NavBar/NavBar';
 import Home from "./components/Home/Home";
 import { CartProvider } from './context/CartContext';
+import Cart from './components/Cartwidget/Cart';
 
 
 
@@ -18,6 +19,7 @@ return (
        <NavBar/>
           <Routes> 
             <Route path= "/" element = {<Home/>} />
+            <Route path= "/Cart" element = {<Cart/>}/>
           </Routes>
     </CartProvider>
     </>
