@@ -9,11 +9,13 @@ const NavBar = () => {
    <div className="nav-container">
     <nav className="navbar">
       <h1 className="navbar-logo">DeViaje Store</h1>
-      <Link className="seeCarrito" to= {"/CartWidget"}>🛒</Link>
+      <Link className="seeCarrito" to= {"/Cart"}>🛒</Link>
     </nav>
    </div>
     
   )
 }
+
+
 
 export default NavBar;
