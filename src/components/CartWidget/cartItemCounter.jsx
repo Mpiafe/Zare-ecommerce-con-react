@@ -17,9 +17,7 @@ const CartItemCounter = ({ producto }) => {
         
       </p>
       <p>{producto.quanty}</p>
-      <p className='counter-button' onClick={() => addToCart(producto)}>
-        +
-      </p>
+      <p className='counter-button' onClick={() => addToCart(producto)}></p>
     </>
   );
 };

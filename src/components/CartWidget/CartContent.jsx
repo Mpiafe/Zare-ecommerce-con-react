@@ -1,8 +1,8 @@
 import CartElement from "./CartElement"
 import CartTotal from "./CartTotal"
 import { useContext } from "react";
-import NavBar from "../NavBar/NavBar";
 import { CartContext } from "../../context/CartContext";
+import "./Cart.css";
 
 
 
@@ -13,6 +13,7 @@ return (
    
     {cart.length > 0 ? (
       <>
+        
         <CartElement />
         <CartTotal />
       </>

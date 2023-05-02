@@ -3,16 +3,17 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 30px;
-    font-size: 10px;
+    font-size: 20px;
   }
   
   .cartContent  img {
-    height: 20px;
-    width: 20px;
+    height: 90px;
+    width: 90px;
     text-align: center;
   }
   
   .cartTotal {
+    font-size: 20px;
     text-align: center;
   }
   

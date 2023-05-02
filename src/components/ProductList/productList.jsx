@@ -20,7 +20,7 @@ const ProductList = () => {
     getItems();
   }, []);
   return (
-    <div>
+    <div className="product-container">
       {productos.map((producto) => (
       <Card key={producto.id} producto={producto}/>
       ))}

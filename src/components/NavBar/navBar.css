@@ -8,17 +8,22 @@
     display:flex;
     justify-content: space-between;
     height: 15vh;
-    background-color: black;
+    background-color: white;
 }
 
-.navbar-logo{
+.navbar-logo img{
+    width: 40%;
     justify-self: start;
     margin-left: 20px;
     color:white;
-    margin-top: 4vh;
+    margin-top: 2vh;
     cursor:pointer;
 }
+
+
+
 .seeCarrito{
+   
     font-size: 25px;
     margin-right: 20px;
     margin-top: 4vh;
