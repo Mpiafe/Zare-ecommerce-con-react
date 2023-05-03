@@ -8,7 +8,14 @@ export const CartContext = createContext()
  const [cart, setCart]= useState([])
 
  const addToCart = (producto)=>{
- setCart ([...cart, producto])
+ 
+  const productorepeat = cart.find((item) => item.id === producto.id);
+  if (productorepeat){
+  setCart (cart.map((item)=>item.id === producto.id ? {...producto, quanty: 
+    productorepeat.quanty +1} : item))
+  }else{
+    setCart ([...cart, producto])
+  }
   }
 
 

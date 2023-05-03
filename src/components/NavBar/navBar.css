@@ -8,7 +8,7 @@
     display:flex;
     justify-content: space-between;
     height: 15vh;
-    background-color: white;
+    background-color: rgb(246, 241, 241);
 }
 
 .navbar-logo img{
@@ -16,7 +16,7 @@
     justify-self: start;
     margin-left: 20px;
     color:white;
-    margin-top: 2vh;
+    margin-top: 1vh;
     cursor:pointer;
 }
 

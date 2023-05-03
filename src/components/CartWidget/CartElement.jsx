@@ -21,10 +21,10 @@ return cart.map((producto) => {
     return (
         <div className='cartContent' key={producto.id}>
               <h3 className='name'>{producto.title}</h3>
-              <CartItemCounter producto={producto} /> 
               <img src={producto.image} alt='product-card'/>
-              <h4 className='price'>{producto.price}$</h4>
-              <h3 className='cart-delete-button' onClick={() => deleteProducto(producto.id)}>❌</h3>
+              <CartItemCounter producto= {producto} /> 
+              <h4 className='price'> $ {producto.price * producto.quanty}</h4>
+              <h3 className='cart-delete-button' onClick={() => deleteProducto(producto.id)}>❎</h3>
         </div>
     )
   });

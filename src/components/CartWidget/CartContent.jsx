@@ -18,7 +18,7 @@ return (
         <CartTotal />
       </>
     ) : (
-      <h2 className='cart-message-center'>Your cart is empty</h2>
+      <h2 className='cart-message-center'>Tu carrito esta vacio</h2>
     )}
   </>
 );
