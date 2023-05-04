@@ -6,7 +6,7 @@ import "./Cart.css";
 
 
 
-const Cart = () => {
+const CartContent = () => {
 const { cart }= useContext (CartContext)
 return (
   <>
@@ -25,4 +25,4 @@ return (
 };
 
 
-export default Cart;
+export default CartContent;

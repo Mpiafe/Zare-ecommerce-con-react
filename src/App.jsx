@@ -1,9 +1,9 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
-import NavBar from './components/navBar/NavBar';
+import NavBar from './components/nav/NavBar';
 import Home from "./components/home/Home";
 import { CartProvider } from './context/CartContext';
-import Cart from './components/cart/CartContent';
+import CartContent from './components/cart/CartContent';
 
 
 
@@ -19,7 +19,7 @@ return (
        <NavBar/>
           <Routes> 
             <Route path= "/" element = {<Home/>} />
-            <Route path= "/Cart" element = {<Cart/>}/>
+            <Route path= "/Cart" element = {<CartContent/>}/>
           </Routes>
     </CartProvider>
     </>
