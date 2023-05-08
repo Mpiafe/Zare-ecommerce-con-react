@@ -3,14 +3,11 @@ import ProductList from "../ProductList/productList";
 
 const Home = () => {
   return (
-
-  <>
-   
-    <Banner/>
-    <productList/>
-  </>
-  
-  )
-}
+    <>
+      <Banner />
+      <ProductList />
+    </>
+  );
+};
 
 export default Home;
