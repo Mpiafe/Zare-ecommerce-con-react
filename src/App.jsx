@@ -1,9 +1,9 @@
 import './App.css';
-import NavBar from './components/Nav/NavBar';
+import NavBar from './components/nav/NavBar';
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/home/Home";
+import Home from "./components/Home/Home";
 import { CartProvider } from './context/CartContext';
-import CartContent from './components/Cart/CartContent';
+import CartContent from './components/cart/CartContent';
 
 
 

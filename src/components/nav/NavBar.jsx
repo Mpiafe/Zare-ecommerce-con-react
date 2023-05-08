@@ -1,6 +1,6 @@
 import  "./navBar.css";
 import { Link } from "react-router-dom";
-import TotalItem from "../Cart/TotalItem";
+import TotalItem from "../cart/TotalItem";
 import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
